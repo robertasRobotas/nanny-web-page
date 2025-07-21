@@ -1,0 +1,26 @@
+.main {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+}
+
+.links nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.4rem;
+}
+
+.links nav ul li a {
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.8rem;
+}
