@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./header.module.css";
 import logo from "../../assets/images/logo.svg";
-import Button from "../Button/Button";
-import LanguageSelectButton from "../LanguageSelectButton/LanguageSelectButton";
+import Button from "../Button/SimpleButton/Button";
+import LanguageSelectButton from "../Button/LanguageSelectButton/LanguageSelectButton";
 
 const Header = () => {
   return (

@@ -10,7 +10,7 @@
 
   appearance: none;
 
-  background-image: url("../../assets/images/arrow-down.svg");
+  background-image: url("../../../assets/images/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: right 6px center;
 }

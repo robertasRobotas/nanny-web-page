@@ -1,3 +1,11 @@
 .wrapper {
   padding: 0 2rem;
 }
+
+.additionalDataWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 1rem 0;
+  height: 300px;
+  gap: 1rem;
+}

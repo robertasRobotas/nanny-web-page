@@ -1,6 +1,8 @@
 import Header from "@/components/Header/Header";
 import styles from "../styles/Home.module.css";
 import Profile from "@/components/Profile/Profile";
+import Rating from "@/components/Rating/Rating";
+import Location from "@/components/Location/Location";
 
 const NannyPage = () => {
   return (
@@ -32,6 +34,10 @@ const NannyPage = () => {
           linksmos, bet ir lavinančios bei pritaikytos"
         pageUrl="..."
       />
+      <div className={styles.additionalDataWrapper}>
+        <Rating rating={4.8} reviewCount={30} />
+        <Location />
+      </div>
     </div>
   );
 };
