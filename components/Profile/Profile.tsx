@@ -3,6 +3,7 @@ import styles from "./profile.module.css";
 import ButtonWithIcon from "../Button/ButtonWithIcon/ButtonWithIcon";
 import hearthIcon from "../../assets/images/hearth.svg";
 import shareIcon from "../../assets/images/share.svg";
+import { nunito } from "@/helpers/fonts";
 
 type ProfileProps = {
   imgUrl: string;
@@ -28,7 +29,7 @@ const Profile = ({ imgUrl, name, intro, pageUrl }: ProfileProps) => {
       <div className={styles.content}>
         <h4 className={styles.subtitle}>Auklės informacija</h4>
         <div className={styles.heading}>
-          <h2 className={styles.title}>{name}</h2>
+          <h2 className={`${styles.title} ${nunito.className}`}>{name}</h2>
           <div className={styles.buttonsWrapper}>
             <ButtonWithIcon title="Išsaugoti" imgSrc={hearthIcon.src} />
             <ButtonWithIcon title="Dalintis" imgSrc={shareIcon.src} />
