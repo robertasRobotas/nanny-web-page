@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./review.module.css";
+import startImg from "../../assets/images/review-star.svg";
 
 export type ReviewType = {
   id: string;
@@ -26,6 +27,11 @@ const Review = ({ name, subtitle, rating, text, imgUrl }: ReviewType) => {
         </div>
       </div>
       <div className={styles.rating}></div>
+      <div className={styles.stars}>
+        {Array.from({ length: rating }).map((_, i) => (
+          <img className={styles.star} key={i} src={startImg.src} alt="star" />
+        ))}
+      </div>
 
       <div className={styles.review}>
         <p>{review}</p>

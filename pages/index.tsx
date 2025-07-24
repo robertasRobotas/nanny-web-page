@@ -7,6 +7,7 @@ import { profile } from "../mocks/profile";
 import { reviews } from "../mocks/reviews";
 
 import Reviews from "@/components/Reviews/Reviews";
+import Capabilities from "@/components/Capabilities/Capabilities";
 
 const NannyPage = () => {
   return (
@@ -24,6 +25,17 @@ const NannyPage = () => {
       </div>
 
       <Reviews reviews={reviews} />
+
+      <Capabilities
+        capabilities={[
+          "IN_DEMAND",
+          "VERIFY",
+          "FIRST_AID",
+          "TEACHER",
+          "ART",
+          "SPORT",
+        ]}
+      />
     </div>
   );
 };
